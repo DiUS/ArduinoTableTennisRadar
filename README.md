@@ -7,7 +7,7 @@ Arduino based table tennis radar project for DiUS hackday.
 # Description #
 
 
-To construct a radar using an Arduino Uno, Ultrasonc sensor and an LED Display.
+To construct a radar using an Arduino Uno, Ultrasonic sensor and an LED Display.
 
 # What's needed ? #
 
