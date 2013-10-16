@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://learn.parallax.com/4-digit-7-segment-led-display-arduino-demo -->
+<html lang="en" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="http://learn.parallax.com/sites/default/files/RedCheck.png" type="image/png">
+<meta content="4-Digit 7-segment LED Display Arduino Demo" about="/4-digit-7-segment-led-display-arduino-demo" property="dc:title">
+<link rel="canonical" href="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com.html">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+<link rel="shortlink" href="http://learn.parallax.com/node/567">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>4-Digit 7-segment LED Display Arduino Demo | learn.parallax.com</title>
+<link type="text/css" rel="stylesheet" href="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all">
+<link type="text/css" rel="stylesheet" href="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/css_Le0-KWtr-L-2ZPJ3eXYjads-CRakcM5nj-8YwaV3_yI.css" media="all">
+<link type="text/css" rel="stylesheet" href="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/css_e3tlw0-8KEF5TapeKZSJVSkivOgDMkFg5NIMBQIV9i8.css" media="all">
+<link type="text/css" rel="stylesheet" href="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/css_6n8wfmiqfkTVhTA2fGrva_Z73lKM7Sbub3s3rSbeMKs.css" media="all">
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="http://learn.parallax.com/sites/default/files/at_css/pixture_reloaded.lt-ie9.layout.css?mtg3d7" media="all" />
+<![endif]-->
+<script type="text/javascript" async="" src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/ga.js"></script><script src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/js_leiH3lpnhdvhlDnF4-VmsojTg2V3-G2vIP6rWg-mNj8.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"pixture_reloaded","theme_token":"VNUDRPiSBpdAO91cRKaybK5SqAqvQKEuVxdOZUrNBkk","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/google_analytics\/js\/google_analytics.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/ckedit_styles\/css\/learn_ckedit_styles.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/print\/css\/printlinks.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/css\/at.base.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/css\/at.layout.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/css\/at.messages.css":1,"sites\/all\/themes\/pixture_reloaded\/color\/colors.css":1,"sites\/all\/themes\/pixture_reloaded\/css\/pixture_reloaded.css":1,"sites\/all\/themes\/pixture_reloaded\/css\/pixture_reloaded.settings.style.css":1,"sites\/all\/themes\/pixture_reloaded\/css\/pixture_reloaded.responsive.style.css":1,"sites\/all\/themes\/pixture_reloaded\/css\/pixture_reloaded.responsive.gpanels.css":1,"public:\/\/at_css\/pixture_reloaded.responsive.layout.css":1,"public:\/\/at_css\/pixture_reloaded.lt-ie9.layout.css":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.70","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"100%","maxHeight":"100%","initialWidth":"300","initialHeight":"250","fixed":false,"scrolling":false}});</script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css"></style></head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-567 page-type-boe-shield site-name-learnparallaxcom section-4-digit-7-segment-led-display-arduino-demo color-scheme-custom pixture-reloaded fs-medium bs-n bb-n mb-dd mbp-c rc-4 ia-n bf-ssl snf-m ssf-m ptf-m ntf-m ctf-m btf-m hs-ts">
+  <div id="skip-link">
+    <a href="http://learn.parallax.com/4-digit-7-segment-led-display-arduino-demo#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="texture-overlay">
+  <div id="page" class="container">
+
+    <header id="header" class="clearfix" role="banner">
+      <div class="header-inner clearfix">
+        <div id="branding">
+                      <div id="logo"><a href="http://learn.parallax.com/" title="Home page"><img src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/ParallaxLogo.png" alt="learn.parallax.com logo"></a></div>
+                                <hgroup>
+                              <h1 id="site-name"><a href="http://learn.parallax.com/" title="Home page">learn.parallax.com</a></h1>
+                                        </hgroup>
+                  </div>
+          <div class="region region-header">
+    <div id="block-search-form" class="block block-search block-odd block-count-1 block-region-header" role="search">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <form action="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-oT-PyGLzngVKWNcdEB74jIwgJGVL_q8B4mRWY5vQmes">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>    </div>
+  </div>
+</div>
+  </div>
+ <!-- /header region -->
+      </div>
+    </header> <!-- /header -->
+
+      <div id="menu-bar" class="nav clearfix">
+      <nav id="block-system-main-menu" class="block block-system block-menu block-odd block-count-2 block-region-menu-bar menu-wrapper clearfix">
+              <h2 class="block-title element-invisible">Main Menu</h2>
+            <ul class="menu clearfix"><li class="first leaf menu-item-1493"><a href="http://learn.parallax.com/learn/home" title="">TUTORIALS</a></li><li class="leaf menu-item-1443"><a href="http://learn.parallax.com/projects" title="">PROJECTS</a></li><li class="leaf menu-item-1464"><a href="http://learn.parallax.com/contest/home" title="">CONTESTS</a></li><li class="leaf menu-item-1484"><a href="http://learn.parallax.com/inspiration/home" title="">INSPIRATION</a></li><li class="last leaf menu-item-1232"><a href="http://learn.parallax.com/events" title="">CLASSES &amp; EVENTS</a></li></ul>  </nav>
+  </div>
+ <!-- /menu bar -->
+
+     <!-- /message -->
+     <!-- /help -->
+
+    
+     <!-- /secondary-content -->
+
+    <!-- Three column 3x33 Gpanel -->
+    
+    <div id="columns"><div class="columns-inner clearfix">
+      <div id="content-column"><div class="content-inner">
+
+         <!-- /highlight -->
+
+                <section id="main-content" role="main">
+
+                                <header class="clearfix">
+                              <h1 id="page-title">4-Digit 7-segment LED Display Arduino Demo</h1>
+                                        </header>
+                    
+            <div class="region region-content">
+    <div id="block-system-main" class="block block-system block-odd block-count-3 block-region-content">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <article id="article-567" class="article article-boe-shield odd article-full clearfix" about="/4-digit-7-segment-led-display-arduino-demo" typeof="sioc:Item foaf:Document" role="article">
+
+  
+      
+      <footer class="submitted">
+            <p class="author-datetime"><span property="dc:date dc:created" content="2013-01-23T11:28:32-08:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/48" typeof="sioc:UserAccount" property="foaf:name" datatype="">Gordon McComb</span> on <time datetime="2013-01-23T11:28:32Z" pubdate="pubdate">Wed, 01/23/2013 - 11:28</time></span></p>
+    </footer>
+  
+  <div class="article-content">
+  <span class="print-link"></span><div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><p><img alt="" src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4x7LED1.jpg" style="width: 356px; height: 150px;"></p>
+<p>&nbsp;</p>
+<p>The 4-Digit 7-Segment Display is a self-contained module containing four 7-segment LED numeric displays.&nbsp; This demo, supporting the <a href="http://learn.parallax.com/micromedic">2013 National microMedic Contest kits</a>, uses the display with the Board of Education Shield for Arduino.&nbsp;</p>
+<p>Each segment in the display is multiplexed, meaning it shares the same anode (positive) connection points, labeled a through g. This reduces the wiring required&nbsp; when developing projects that need multiple digit displays.</p>
+<p>Each of the four digits in the module use their own common cathode (negative) connection point. This allows each digit to be turned on or off independently.</p>
+<p>&nbsp;</p>
+<p><img alt="" src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4x7LED2.png" height="242" width="506"></p>
+<p>&nbsp;</p>
+<p><img alt="" src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4x7LED3.png" style="width: 332px; height: 364px;"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The LED segments of this display require a current-limiting resistor when powered from a 5 V logic pin. The following figure demonstrates the basic concept behind using a current-limiting resistor. The value of the resistor is typically between 330 and 560 ohms; the higher the value, the more the current that is limited, and the less bright the LED segments.</p>
+<p>&nbsp;</p>
+<p><img alt="" src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4x7LED4.png" style="width: 391px; height: 149px;"></p>
+<p>&nbsp;</p>
+<h2>Connections</h2>
+<p>&nbsp;</p>
+<p><img alt="" src="./4-Digit 7-segment LED Display Arduino Demo   learn.parallax.com_files/4x7LED5.png" style="width: 600px; height: 403px;"></p>
+<p>&nbsp;</p>
+<p>To connect the 4-digit 7-segment display to the Arduino Shield, attach the three leads of the device as shown in the figure. Note the use of additional components not included in the microMedic kit.</p>
+<ul><li><strong>Resistors R1 through R7</strong> limit current to each of the segments of the display. Note that the decimal point connection is not used in this demonstration.</li>
+<li><strong>Transistors Q1 through Q4</strong> provide additional driving current to the LED segments. These transistors are recommended because each pin on the Arduino can source or sink only 40 mA of current. With seven segments of the display turned on at once (the numeral 8), the current demand can exceed this limit.</li>
+<li><strong>Resistors R8 through R11</strong> serve to limit current to the base of each transistor.</li>
+</ul><p>&nbsp;</p>
+<h2>Programming</h2>
+<p>&nbsp;</p>
+<p><a class="Arduino" href="http://learn.parallax.com/sites/default/files/content/shield/4-dig-7-seg-display-demo/4-Digit-7-Seg-LED-Arduino-Demo.zip">Download Arduino Demo Code</a></p>
+<p>&nbsp;</p>
+<p>To use this example, upload the following sketch to your Arduino. The display updates about once every quarter second, counting up the tenths of milliseconds since the sketch was started.</p>
+<p><span class="notebox">This sketch requires the use of a third-party library, Multiplex7Seg. It is included in the download with the example sketch. To use this library, if it’s running exit the Arduino IDE software, and move Multiplex7Seg folder to your Arduino sketchbook libraries folder. This is typically in (My) Documents\Arduino\libraries. Restart the IDE software, then load and run the sketch.</span></p>
+<pre class="Arduino">#include &lt;Multiplex7Seg.h&gt;
+
+byte digitPins[] = {9, 10, 11, 12};&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // LSB to MSB
+byte segmentPins[] = {2, 3, 4, 5, 6, 7, 8}; // Segment a to g
+unsigned int adc;
+
+void setup() {
+&nbsp; Multiplex7Seg::set(1, 4, digitPins, segmentPins);&nbsp;&nbsp; // Initialize
+&nbsp; // See the example in Multiplex7Seg library for initialization parameters
+}
+
+void loop() {
+&nbsp; Multiplex7Seg::loadValue(millis() / 10);&nbsp; // Display incrementing value
+&nbsp; delay(247);
+}</pre></div></div></div>  </div>
+
+      <nav class="clearfix"><ul class="links inline"><li class="print_html first last"><a href="http://learn.parallax.com/print/567" title="Display a printer-friendly version of this page." class="print-page" rel="nofollow">Printer-friendly version</a></li></ul></nav>
+  
+  
+</article>
+    </div>
+  </div>
+</div>
+  </div>
+ <!-- /content -->
+
+           <!-- /feed icons -->
+
+        </section> <!-- /main-content -->
+
+         <!-- /content-aside -->
+
+      </div></div> <!-- /content-column -->
+
+        <div class="region region-sidebar-first sidebar">
+    <nav id="block-menu-menu-learn" class="block block-menu block-odd block-count-4 block-region-sidebar-first" role="navigation">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Tutorials</h2>
+            <div class="block-content content">
+      <ul class="menu clearfix"><li class="first leaf menu-item-1504"><a href="http://learn.parallax.com/learn/home" title="">Tutorials Home</a></li><li class="collapsed menu-item-1629"><a href="http://learn.parallax.com/propellerc" title="">Propeller C</a></li><li class="collapsed menu-item-1487"><a href="http://learn.parallax.com/propeller-board-education" title="">Propeller BOE Tutorials</a></li><li class="collapsed menu-item-1488"><a href="http://learn.parallax.com/BOEShield" title="">BOE Shield Tutorials</a></li><li class="leaf menu-item-1614"><a href="http://learn.parallax.com/bsa-robotics-merit-badge-boe-bot" title="">BSA Robotics Merit Badge with the Boe-Bot</a></li><li class="leaf menu-item-1486"><a href="http://learn.parallax.com/KickStart" title="">Microcontroller KickStarts</a></li><li class="leaf menu-item-1820"><a href="http://learn.parallax.com/micromedic/kit-demos" title="">microMedic Demos</a></li><li class="last leaf menu-item-1494"><a href="http://learn.parallax.com/reference/home">Reference</a></li></ul>    </div>
+  </div>
+</nav>
+<section id="block-block-7" class="block block-block block-even block-count-5 block-region-sidebar-first">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">BOE Shield Resources</h2>
+            <div class="block-content content">
+      <p><a href="http://www.parallax.com/BOEShield" target="_blank">Buy a BOE Shield►</a></p>
+<p><a href="http://www.arduino.cc/" target="_blank">Download Arduino Software►</a></p>
+<p><a href="http://arduino.cc/en/Reference/HomePage" target="_blank">Open Arduino Reference►</a></p>
+<p><a href="http://www.robotc.net/download/arduino/" target="_blank">Download ROBOTC for Arduino►</a></p>
+    </div>
+  </div>
+</section>
+  </div>
+      
+    </div></div> <!-- /columns -->
+
+     <!-- /tertiary-content -->
+
+    <!-- Four column Gpanel -->
+    
+          <footer id="footer" role="contentinfo"><div id="footer-inner" class="clearfix">
+          <div class="region region-footer">
+    <div id="block-block-9" class="block block-block block-odd block-count-6 block-region-footer">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <p style="text-align: center;"><strong><a href="http://www.parallax.com/">SHOP IN THE PARALLAX STORE </a></strong><strong><a href="http://www.parallax.com/">►</a></strong></p>
+<p style="text-align: center;"><a href="http://learn.parallax.com/terms">Terms of Use</a> ♦ Feedback: <a href="mailto:learn@parallax.com?subject=Email%20from%20learn.parallax.com">learn@parallax.com </a>♦ Copyright©Parallax Inc. 2013 (unless otherwise noted)</p>
+    </div>
+  </div>
+</div>
+  </div>
+ <!-- /footer region -->
+      </div></footer> <!-- /footer/footer-inner -->
+    
+  </div> <!-- /page -->
+</div> <!-- /texture overlay -->  
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>
